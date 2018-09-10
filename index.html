@@ -2,8 +2,10 @@
 
 <style>
 .container {
-	background: #FFFFFF;
+	<!--background: #FFFFFF;-->
+	width: 1280px;
 	margin: auto auto;
+	padding: 0px;
 }
 
 .header {
@@ -29,12 +31,15 @@
 	float: right;
 }
 
+.elmenu:hover {
+background: white;
+}
+
 .textmenu {
 	text-align: center;
 	padding: 0;
 	margin: 0;
 }
-
 
 .blok1 {
 	padding: 0px;
@@ -42,6 +47,34 @@
 	width: 1280px;
 	margin: auto auto;
 	background: url(images/11.jpg);
+	text-align: center;
+	color: white;
+	font-family: Arial;
+	font-weight: bold;
+}
+
+.privet {
+	height: 60px;
+	width: 1280px;
+	padding: 90px 0px 0px 0px;
+	font-size: 25pt;
+}
+.helptxt {
+	height: 50px;
+	width: 1280px;
+	font-size: 18pt;
+}
+.message {
+	height: 100px;
+	width: 1280px;
+	font-size: 50pt;		
+
+}
+.help2txt {
+	height: 553px;
+	width: 1280px;
+	font-weight: normal;
+	font-size: 14pt;
 }
 
 .blok2 {
@@ -172,7 +205,46 @@
 
 .soc {
 	float: left;
+	width: 230px;
 	padding: 0px 0px;
+}
+
+.soc-icon {
+	width: 69px;
+	height: 66px;
+	background: url(images/socknopki.jpg) no-repeat;
+	display: inline-block;
+}
+
+.soc-icon:hover {
+	width: 69px;
+	height: 66px;
+	background: url(images/socknopki2.jpg) no-repeat;
+	display: inline-block;
+} 
+
+.instagram {
+	background-position: 0 0;
+}
+
+.vkontakte {
+	background-position: -69px 0;
+}
+
+.facebook {
+	background-position: -138px 0;
+}
+
+.instagram:hover {
+	background-position: 0 0;
+}
+
+.vkontakte:hover {
+	background-position: -69px 0;
+}
+
+.facebook:hover {
+	background-position: -138px 0;
 }
 
 .diz {
@@ -192,7 +264,6 @@
 			<img src="images/logo.jpg" alt="#">
 		</div>	<!-- Кнопки меню - сделал div-ами - потом узнал что можно через список, не переделывал  -->
 		<div class="elmenu">
-
 		<div class="textmenu">
 			<a href="#" style="text-decoration: none">КОНТАКТЫ</a>
 			</div>
@@ -227,6 +298,18 @@
 	<div style="clear:both"></div>
 <!-- блок - ключевой месендж -->
 	<div class="blok1">
+		<div class="privet">
+		TEXT PRIVETSTVIYA
+		</div>
+		<div class="helptxt">
+		SHORT HELP TEXT
+		</div>
+		<div class="message">
+		MAIN MESSAGE
+		</div>
+		<div class="help2txt">
+		ASSESORY TEXT
+		</div>
 	</div>
 <!-- блок - история компании -->
 	<div class="blok2">
@@ -297,8 +380,14 @@
 	<div class="footer">
 		<div class="telfoot">0 44 550-63-33</div>
 		<div class="prava">Петрохолдинг 2016. Все права защищены<br><a href="#" style="color: green">Контактная информация</a></div>
-		<div class="soc"> <img src="images/socknopki.jpg" alt="#"> </div>
-		<div class="diz">Дизайн от <a href="#" style="color: green">Бюро идей</a> <br><a href="#" style="color: green">Информация о сайте</a></div>
+	<!-- 	<div class="soc"> <img src="images/socknopki.jpg" alt="#"> </div> -->
+	 	<div class="soc">
+			<a href="http://instagram.com/" class="soc-icon instagram"></a>
+			<a href="http://vk.com/" class="soc-icon vkontakte"></a>
+			<a href="http://facebook.com/" class="soc-icon facebook"></a>
+		</div>
+	
+	<div class="diz">Дизайн от <a href="#" style="color: green">Бюро идей</a> <br><a href="#" style="color: green">Информация о сайте</a></div>
 	</div>
 		
 </div>
